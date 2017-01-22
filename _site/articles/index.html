@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html lang="en-us" class="ie9"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en-us" class="layout-pf layout-pf-fixed">
+<!--<![endif]-->
+  <head>
+    <title>Articles - FortNebula</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/dist/img/favicon.ico">
+    <!-- iPad retina icon -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../dist/img/apple-touch-icon-precomposed-152.png">
+    <!-- iPad retina icon (iOS < 7) -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../dist/img/apple-touch-icon-precomposed-144.png">
+    <!-- iPad non-retina icon -->
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../../dist/img/apple-touch-icon-precomposed-76.png">
+    <!-- iPad non-retina icon (iOS < 7) -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../dist/img/apple-touch-icon-precomposed-72.png">
+    <!-- iPhone 6 Plus icon -->
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../../dist/img/apple-touch-icon-precomposed-180.png">
+    <!-- iPhone retina icon (iOS < 7) -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../dist/img/apple-touch-icon-precomposed-114.png">
+    <!-- iPhone non-retina icon (iOS < 7) -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../dist/img/apple-touch-icon-precomposed-57.png">
+    <link rel="stylesheet" href="/assets/dist/css/patternfly.min.css" >
+    <link rel="stylesheet" href="/assets/dist/css/patternfly-additions.min.css" >
+      <link href="" rel="stylesheet" media="screen, print">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/assets/dist/js/jquery.matchHeight-min.js"></script>
+    <script src="/assets/dist/js/patternfly.min.js"></script>
+  </head>
+
+  <nav class="navbar navbar-pf-vertical">
+  <div class="navbar-header">
+     <button type="button" class="navbar-toggle">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a href="/" class="navbar-brand">
+      <img class="navbar-brand-icon" src="/assets/dist/img/logo-alt.svg" alt=""/><img class="navbar-brand-name" src="/assets/dist/img/fn-brand.svg" alt="PatternFly Enterprise Application" />
+    </a>
+  </div>
+  <nav class="collapse navbar-collapse">
+    <ul class="nav navbar-nav">
+    </ul>
+    <ul class="nav navbar-nav navbar-right navbar-iconic">
+      <li class="dropdown">
+        <a class="dropdown-toggle nav-item-iconic" id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          <span title="Notifications" class="fa pficon-flag"></span>
+          <span class="badge">0</span>
+        </a>
+        <div class="dropdown-menu infotip bottom-right">
+          <div class="arrow"></div>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <span class="i pficon pficon-info"></span> No Messages
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle nav-item-iconic" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          <span title="Help" class="fa pficon-help"></span>
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li><a href="https://github.com/donnydavis/donnydavis.github.io">Fork Me</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</nav> <!--/.navbar-->
+
+
+<div class="nav-pf-vertical
+     
+     
+     
+     
+     ">
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a href="/#">
+        <span class="fa fa-dashboard" data-toggle="tooltip" title="Home"></span>
+        <span class="list-group-item-value">Home</span>
+      </a>
+    </li>
+    <li class="list-group-item">
+      <a href="/articles">
+        <span class="fa fa-paper-plane" data-toggle="tooltip" title="Articles"></span>
+        <span class="list-group-item-value">Articles</span>
+      </a>
+    </li>
+    <li class="list-group-item">
+      <a href="/services">
+        <span class="fa fa-rocket" data-toggle="tooltip" title="Services"></span>
+        <span class="list-group-item-value">Services</span>
+      </a>
+    </li>
+    <li class="list-group-item">
+      <a href="/about">
+        <span class="fa fa-graduation-cap" data-toggle="tooltip" title="About"></span>
+        <span class="list-group-item-value">About</span>
+      </a>
+    </li>
+    <li class="list-group-item">
+      <a href="/links">
+        <span class="fa fa-link" data-toggle="tooltip" title="Links"></span>
+        <span class="list-group-item-value">Links</span>
+      </a>
+    </li>
+    <li class="list-group-item">
+      <a href="/docs/latest/welcome/">
+        <span class="fa fa-book" data-toggle="tooltip" title="Links"></span>
+        <span class="list-group-item-value">Docs</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<script>
+  $(document).ready(function() {
+    // matchHeight the contents of each .card-pf and then the .card-pf itself
+    $(".row-cards-pf > [class*='col'] > .card-pf .card-pf-title").matchHeight();
+    $(".row-cards-pf > [class*='col'] > .card-pf > .card-pf-body").matchHeight();
+    $(".row-cards-pf > [class*='col'] > .card-pf > .card-pf-footer").matchHeight();
+    $(".row-cards-pf > [class*='col'] > .card-pf").matchHeight();
+
+    // Initialize the vertical navigation
+    $().setupVerticalNavigation(true);
+  });
+</script>
+
+  <body>
+    <div class="container-fluid container-cards-pf container-pf-nav-pf-vertical
+         
+         
+         ">
+    <div class="container">
+      <div class="page-header">
+        <h1>Articles</h1>
+      </div>
+      <hr>
+<ul class="post-list">
+  
+    <li>
+      <a href="/articles/general/document-mgmt/2016/12/29/asciibinder-doc-mgmt.html">Asciibinder Document Management</a>
+      <p>If you check out the Documents section of Fort Nebula, you will see a pretty slick document management system at work. It’s  <a href="http://www.asciibinder.org/index.html">asciibinder</a>, and is used around the web for documentation generation. It’s asciidoctor based, and you can apply any sort of customization you would like. If you are interested, you can check it out here on <a href="http://project.fortnebula.com/docs/latest/welcome/">Fort Nebula</a></p>
+
+
+    </li>
+  
+    <li>
+      <a href="/articles/general/new-site/2016/12/28/another-new-site.html">Yet another new site</a>
+      <p>So Donny is at it again, making new sites for no real reason.</p>
+
+
+    </li>
+  
+    <li>
+      <a href="/articles/cloud/rhv/2016/10/07/RHV-4.0-HA-Demo.html">RHV 4.0 HA Demo</a>
+      <p>So I made a pretty short video on youtube to show off RHV 4.0 doing an HA failover of a VM. It’s not a great video, but it shows what is happening.</p>
+
+
+    </li>
+  
+    <li>
+      <a href="/articles/cloud/openstack/2016/09/22/Openstack-and-IPv6.html">OpenStack and IPv6</a>
+      <p><img class="img-responsive" style="float: right;" src="/assets/blog/img/openstack.jpg" />
+OpenStack can do some pretty cool things. For someone who is network savvy, ipv6 is a pretty popular topic.</p>
+
+
+    </li>
+  
+</ul>
+
+    </div><!-- /container -->
+
+</div>
+  </body>
+</html>

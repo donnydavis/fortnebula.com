@@ -1,0 +1,104 @@
+---
+layout: default
+---
+<div class="container-fluid">
+  <div class="blank-slate-pf " id="">
+    <div class="blank-slate-pf-icon">
+    <span class="pficon pficon pficon-ok"></span>
+    </div>
+      <h1>
+       WELCOME TO FORT NEBULA
+      </h1>
+      <h3>
+       Cloud Services, articles about how to do cool things, and a bunch of random stuffs.
+      </h3>
+       <p>
+       For information on how to operate or request services <a href="/docs">Read the documentation here</a>.
+      </p>
+
+<br/>
+  </div>
+
+<div class="container-fluid container-cards-pf">
+  <div class="row row-cards-pf">
+    <div class="col-xs-6 col-md-4">
+<div class="card-pf card-pf-view card-pf-view-select card-pf-view-single-select">
+  <div class="card-pf-body">
+    <div class="card-pf-top-element">
+      <span class="fa fa-paper-plane card-pf-icon-circle"></span>
+    </div>
+    <h2 class="card-pf-title text-center">
+      Articles I care about
+    </h2>
+    <div class="card-pf-items text-center">
+      <div class="card-pf-item">
+        <span class="card-pf-item-text">
+          I write articles mainly for my own reference
+        </span>
+      </div>
+    </div>
+<p class="card-pf-info text-center"><a href="/services">Check them out</a></p>
+  </div>
+</div>
+    </div>
+    <div class="col-xs-6 col-md-4">
+<div class="card-pf card-pf-view card-pf-view-select card-pf-view-single-select">
+  <div class="card-pf-body">
+    <div class="card-pf-top-element">
+      <span class="fa fa-rocket card-pf-icon-circle"></span>
+    </div>
+    <h2 class="card-pf-title text-center">
+      Apps you can actually use
+    </h2>
+    <div class="card-pf-items text-center">
+      <div class="card-pf-item">
+        <span class="card-pf-item-text">
+          I offer 99% of my services for free. Unless you hit a paywall, its on the house
+
+        </span>
+      </div>
+    </div>
+    <p class="card-pf-info text-center"><a href="/services">Current Services</a></p>
+    <br/>
+  </div>
+</div>
+    </div>
+    <div class="col-xs-6 col-md-4">
+<div class="card-pf card-pf-view card-pf-view-select card-pf-view-single-select">
+  <div class="card-pf-body">
+    <div class="card-pf-top-element">
+      <span class="fa pficon-project card-pf-icon-circle"></span>
+    </div>
+    <h2 class="card-pf-title text-center">
+      All opensource
+    </h2>
+    <div class="card-pf-items text-center">
+      <div class="card-pf-item">
+        <span class="card-pf-item-text">
+          Everything I do at Fort Nebula, you can do yourself with upstream Open Source software. Is there any other kind of software?
+        </span>
+      </div>
+    </div>
+    <p class="card-pf-info text-center"><a href="/links">What software am I using</a></p>
+    <br/>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+<script>
+  $(function() {
+    // matchHeight the contents of each .card-pf and then the .card-pf itself
+    $(".row-cards-pf > [class*='col'] > .card-pf > .card-pf-body").matchHeight();
+  });
+  $(document).ready(function() {
+    // Card Single Select
+    $('.card-pf-view-single-select').click(function() {
+      if ($(this).hasClass('active'))
+      { $(this).removeClass('active'); }
+      else
+      { $('.card-pf-view-single-select').removeClass('active'); $(this).addClass('active'); }
+    });
+  });
+</script>

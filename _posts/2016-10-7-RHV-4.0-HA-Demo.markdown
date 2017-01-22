@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "RHV 4.0 HA Demo"
+date:   2016-10-07 12:00 -0500
+categories: articles cloud rhv
+---
+So I made a pretty short video on youtube to show off RHV 4.0 doing an HA failover of a VM. It’s not a great video, but it shows what is happening.
+
+{% youtube GnWJn7In-jg %}

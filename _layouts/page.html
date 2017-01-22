@@ -1,0 +1,11 @@
+---
+css-extra: true
+layout: default
+---
+    <div class="container">
+      <div class="page-header">
+        <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+      </div>
+      <hr>
+{{ content }}
+    </div><!-- /container -->
